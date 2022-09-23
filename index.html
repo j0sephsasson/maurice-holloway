@@ -157,6 +157,34 @@
         }
     }
 
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: large;
+        white-space: nowrap;
+    }
+
+    @font-face {
+        font-family: coverFont;
+        src: url('assets/AvalonRegular-OV9GO.ttf');
+    }
+
+    .pic-name {
+        font-family: coverFont;
+        font-size: 70px;
+    }
+
+
     @media screen and (max-width: 600px) {
         .topnav.responsive {
             position: relative;
@@ -187,50 +215,98 @@
             width: 100%;
             text-align: left;
         }
+
+        .pic-name {
+            font-family: coverFont;
+            font-size: 70px;
+        }
+    }
+
+    .title {
+        font-family: coverFont;
+        font-size: 70px;
+        color: white;
     }
 </style>
 
 <body>
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active">MAURICE HOLLOWAY</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#">BTS</a>
+        <a href="#">Video</a>
+        <a href="#">Portraits</a>
+        <a href="#">Model</a>
         <a href="#">Instagram</a>
-        <a href="#">Contact</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="w3-center w3-container" style="padding-top: 50px;">
+        <h1 class="title">BTS</h1>
     </div>
 
     <div class="container-fluid w3-center" style="padding-top: 50px;">
         <div class="row picture-row">
             <div class="col-sm-6">
-                <img src="assets/gunna/Photo Nov 07, 5 25 29 AM.jpg">
+                <a href="gunna.html">
+                    <div class="container">
+                        <img src="assets/gunna/Photo Nov 07, 5 25 29 AM.jpg" alt="Gunna" style="width:100%;">
+                        <div class="centered pic-name">GUNNA</div>
+                    </div>
+                </a>
             </div>
             <div class="col-sm-6">
-                <img src="assets/belly.jpg">
-            </div>
-        </div>
-        <div class="row picture-row">
-            <div class="col-sm-6">
-                <img src="assets/DSC07688.jpg">
-            </div>
-            <div class="col-sm-6">
-                <img src="assets/tecca.jpg">
-            </div>
-        </div>
-        <div class="row picture-row">
-            <div class="col-sm-6">
-                <img src="assets/nahmir.jpg">
-            </div>
-            <div class="col-sm-6">
-                <img src="assets/girls.jpg">
+                <a href="#">
+                    <div class="container">
+                        <img src="assets/weeknd/weeknd.png" alt="The Weeknd" style="width:100%;">
+                        <div class="centered pic-name">The Weeknd</div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="row picture-row">
             <div class="col-sm-6">
-                <img src="assets/thug.jpg">
+                <a href="#">
+                    <div class="container">
+                        <img src="assets/future/f2e.jpg" alt="Future" style="width:100%;">
+                        <div class="centered pic-name">Future</div>
+                    </div>
+                </a>
             </div>
             <div class="col-sm-6">
-                <img src="assets/salsa.jpg">
+                <a href="#">
+                    <div class="container">
+                        <img src="assets/nav/0A1A5814 (1).png" alt="Nav" style="width:100%;">
+                        <div class="centered pic-name">Nav</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row picture-row">
+            <div class="col-sm-6">
+                <div class="container">
+                    <img src="assets/misc/trav.png" alt="Travis" style="width:100%;">
+                    <div class="centered pic-name">Travis Scott</div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="container">
+                    <img src="assets/misc/post.jpg" alt="Post" style="width:100%;">
+                    <div class="centered pic-name">Post Malone</div>
+                </div>
+            </div>
+        </div>
+        <div class="row picture-row">
+            <div class="col-sm-6">
+                <div class="container">
+                    <img src="assets/misc/g4.jpg" alt="Gucci" style="width:100%;">
+                    <div class="centered pic-name">Gucci Mane</div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="container">
+                    <img src="assets/misc/thug.jpg" alt="Thug" style="width:100%;">
+                    <div class="centered pic-name">Young Thug</div>
+                </div>
             </div>
         </div>
 
